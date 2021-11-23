@@ -23,7 +23,10 @@ EXPOSE 4000
 
 ENV PORT=4000 \
     MIX_ENV="prod" \
-    SECRET_KEY_BASE="RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5"
+    SECRET_KEY_BASE="RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5" \
+    DISABLE_EXCHANGE_RATES=true \
+    SHOW_PRICE_CHART=false \
+    SHOW_TXS_CHART=true
 
 # Cache elixir deps
 ADD mix.exs mix.lock ./
